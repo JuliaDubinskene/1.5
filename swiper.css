@@ -1,0 +1,206 @@
+
+
+.logos-container {
+    min-height: 110px;
+}
+.swiper__title {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #D9FFF5;;
+    text-transform: uppercase;
+    color: #7E7E82;
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+    padding: 16px;
+    padding-bottom: 32px;
+}
+
+.swiper-container {
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-container__border {
+    position: absolute;
+    height: 74px;
+    width: 18px;
+    filter: blur(4px);
+    right: 0;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    z-index: 2;
+}
+.swiper-slide{
+    max-width: 767px;
+    text-align: center;
+    font-size: 18px;
+    background: #f8f8f8;
+    height: 130px;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 16px;
+}
+.swiper-slide__logo {
+    position: relative;
+    height: 72px;
+    width: 240px;
+    border-radius: 5px;
+    margin-left: 16px;
+    border: 1px solid rgba(234, 234, 234, 1);
+}
+.swiper-slide__logo_lenovo {
+    background: no-repeat 16px center url("img/logos/lenovo.svg") white;
+}
+.swiper-slide__logo_samsung {
+    background: no-repeat 16px center url("img/logos/samsung.svg") white;
+}
+.swiper-slide__logo_apple {
+    background: no-repeat 16px center url("img/logos/apple.svg") white;
+}
+.swiper-slide__logo_sony {
+    background: no-repeat 16px center url("img/logos/sony.svg") white;
+}
+.swiper-slide__logo_bosch {
+    background: no-repeat 16px center url("img/logos/bosch.svg") white;
+}
+.swiper-slide__logo_hp {
+    background: no-repeat 16px center url("img/logos/hp.svg") white;
+}
+.swiper-slide__logo_acer {
+    background: no-repeat 16px center url("img/logos/acer.svg") white;
+}
+.swiper-slide__logo_viewsonic {
+    background: no-repeat 16px center url("img/logos/viewsonic.svg") white;
+}
+.swiper-slide__link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #FF3E79;
+    position: absolute;
+    right: 18px;
+    top: 14px;
+}
+
+.swiper-slide__link::before,
+.swiper-slide__link::after {
+    content: "";
+    width: 2px;
+    height: 9px;
+    background-color: #FF3E79;
+    position: absolute;
+    right: 18px;
+}
+
+.swiper-slide__link::before {
+    transform: rotate(55deg);
+    top: 17px;
+}
+
+.swiper-slide__link::after {
+    transform: rotate(-55deg);
+    top: 13px;
+}
+.swiper-look-all {
+    display: none;
+}
+.swiper-pagination-bullet-active {
+    background-color: #949499 !important;
+}
+@media only screen and (min-width: 768px) {
+    .swiper-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 720px !important;
+    }
+    .swiper__title {
+        padding-left: 32px;
+    }
+    .swiper-container__border {
+        display: none;
+    }
+    .logos-container {
+        display: flex;
+    }
+    .swiper-slide{
+        max-width: 240px;
+    }
+    .swiper__slide {
+        margin-bottom: 16px;
+
+    }
+    .swiper-slide__brand {
+        margin-left: 0;
+        width: 224px;
+    }
+    .swiper-slide:nth-child(4), .swiper-slide:nth-child(8) {
+        display: none;
+    }
+
+    .swiper-look-all {
+        display: flex;
+        width: 768px;
+    }
+    .swiper-look-all_move {
+        margin-bottom: 16px;
+        margin-top: 14px;
+    }
+
+    .swiper-look-all__wrapper {
+        margin-left: 20px;
+    }
+
+    .swiper-look-all__btn {
+        font-family: TTLakes, sans-serif;
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: bold;
+        border: 0;
+        background-color: rgba(248,248,248, 1);
+        outline: none;
+    }
+    .swiper__slide_hidden {
+        display: none;
+    }
+    .swiper__slide_show {
+        display: flex !important;
+    }
+    .rotate {
+        transform: rotate(180deg);
+    }
+    .swiper-look-all_top {
+        margin-top: 46px;
+    }
+}
+@media only screen and (min-width: 1120px) {
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 1056px !important;
+    }
+
+    .swiper-slide{
+        max-width: 264px;
+    }
+    
+    .swiper-slide__logo {
+        width: 240px;
+    }
+    .swiper__slide_hidden {
+        display: none;
+    }
+
+    .swiper-slide:nth-child(4), .swiper-slide:nth-child(8) {
+        display: block;
+    }
+
+    .swiper-slide__logo {
+        width: 240px;
+    }
+
+}
